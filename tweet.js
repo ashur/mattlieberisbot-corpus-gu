@@ -11,7 +11,7 @@ if( !value )
 data.used.push( value );
 data.unused.shift();
 
-fs.writeFile( "./data.json", JSON.stringify( data, null, 4 ), err =>
+fs.writeFile( `${__dirname}/data.json`, JSON.stringify( data, null, 4 ), err =>
 {
 	if( err )
 	{
